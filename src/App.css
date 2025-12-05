@@ -336,7 +336,7 @@
 
   /* PC */
   .section-padding-top {
-    padding-top: 220px;
+    padding-top: 180px;
   }
 }
 
@@ -346,12 +346,12 @@
 
 @media (min-width: 769px) and (max-width: 1023px) { /* Tablet */
   .section-padding-bottom {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 
 @media (min-width: 1024px) { /* PC */
   .section-padding-bottom {
-    padding-bottom: 110px;
+    padding-bottom: 160px;
   }
 }

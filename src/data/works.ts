@@ -70,8 +70,8 @@ export const works = [
   },
   {
     id: 7,
-    title: '中重製材株式会社 オフィシャルサイト',
-    siteName: 'nakaju.com',
+    title: '中村住宅開発 オフィシャルサイト',
+    siteName: '中村住宅開発 オフィシャルサイト',
     role: 'Webディレクション、フロントエンド開発',
     team: '社内開発チーム',
     url: 'https://www.nakaju.com/',
