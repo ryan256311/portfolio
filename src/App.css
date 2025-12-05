@@ -339,3 +339,19 @@
     padding-top: 220px;
   }
 }
+
+.section-padding-bottom {
+  padding-bottom: 40px; /* Mobile first */
+}
+
+@media (min-width: 769px) and (max-width: 1023px) { /* Tablet */
+  .section-padding-bottom {
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) { /* PC */
+  .section-padding-bottom {
+    padding-bottom: 110px;
+  }
+}

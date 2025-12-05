@@ -5,7 +5,7 @@ import './About.css'; // Assuming About.css for specific styles if needed, other
 const About: React.FC = () => {
   return (
     <AnimatedSection>
-      <section id="about" className="min-h-screen section-padding-top">
+      <section id="about" className="min-h-screen section-padding-top section-padding-bottom">
         {/* Main Content Container */}
         <main className="content-container"> {/* Use main tag as in reference HTML for semantic structure */}
 

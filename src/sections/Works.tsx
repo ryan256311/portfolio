@@ -5,7 +5,7 @@ import { works } from '../data/works'; // Import works data
 const Works: React.FC = () => {
   return (
     <AnimatedSection>
-      <section id="works" className="min-h-screen section-padding-top">
+      <section id="works" className="min-h-screen section-padding-top section-padding-bottom">
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {works.map((work) => ( // Use imported works data
