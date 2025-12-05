@@ -34,7 +34,7 @@ export const works = [
     siteName: '個人ポートフォリオ',
     role: 'フルスタック開発者',
     team: '個人プロジェクト',
-    url: '#', // 実際のURLがあれば更新
+    url: 'https://portfolio-xi-one-89.vercel.app/', // 実際のURLがあれば更新
     techStack: 'React, TypeScript, Tailwind CSS',
     background: '自身のプロジェクトやスキルを効果的に紹介するために、個人のポートフォリオサイトを開発いたしました。',
     implementation: 'UI/UXの設計と実装、ReactとTailwind CSSを用いたフロントエンドの構築、および必要に応じたバックエンド連携を行いました。',
