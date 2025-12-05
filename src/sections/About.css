@@ -1,0 +1,20 @@
+.block-ctr {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-740 {
+    width: 740px;
+    max-width: 100%;
+}
+
+.w-840 {
+    width: 840px;
+    max-width: 100%;
+}
+
+.profile-heading-with-border span {
+    text-align: left;
+    display: block;
+}

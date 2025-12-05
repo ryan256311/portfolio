@@ -1,0 +1,341 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes progress-fill {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes text-fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  /* 擬似要素の基準位置 */
+  padding-left: 20px;
+  /* ドットがテキストと重ならないように調整 */
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  /* 縦線からドットの位置を調整 */
+  top: 8px;
+  /* アイテムの上部からの位置を調整 */
+  width: 16px;
+  /* ドットの幅 */
+  height: 16px;
+  /* ドットの高さ */
+  background-color: #B896E3;
+  /* tailwind.config.tsで定義されたaccentカラー */
+  border-radius: 9999px;
+  /* rounded-full */
+  z-index: 10;
+  /* 他の要素より手前に表示 */
+}
+
+.timeline-item h4 {
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- メインコンテンツ（Grid Layout） --- */
+.content-container {
+  max-width: 1000px;
+  /* PCでの最大幅 */
+  margin: 0 auto;
+  color: #fff;
+  /* Changed text color to white */
+}
+
+/* 各セクションの行: 左タイトル(200px)と右本文(可変)のグリッド */
+.info-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  /* 左カラム固定 (200px)、右カラム可変 */
+  margin-bottom: 80px;
+  align-items: baseline;
+  /* コンテンツが中央揃えにならないように調整 */
+  gap: 20px;
+  /* カラム間の隙間 */
+}
+
+
+
+/* 左側の見出し (Skill, Promiseなど) */
+.section-title {
+  font-family: 'Times New Roman', Times, serif;
+  /* セリフ体を使用 */
+  font-size: 24px;
+  font-weight: normal;
+  /* Added as per reference */
+  letter-spacing: 1px;
+  color: #fff;
+  /* Changed text color to white */
+}
+
+/* 右側の本文エリア */
+.section-body {
+  font-size: 16px;
+  /* Changed from 13px to 16px */
+  color: #fff;
+  /* Changed text color to white */
+}
+
+.section-body p {
+  margin-bottom: 14px;
+  text-align: justify;
+  /* 両端揃え */
+}
+
+.section-body h4,
+.section-body li {
+  text-align: left;
+}
+
+.en-text {
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* リストアイテム (Discography, Awardsなど) */
+.list-item {
+  margin-bottom: 24px;
+}
+
+.year {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.desc {
+  color: #666;
+  font-size: 12px;
+}
+
+/* --- レスポンシブ対応 (モバイル向け) --- */
+@media (max-width: 768px) {
+
+  .section-body {
+    font-size: 14px;
+  }
+
+  .content-container {
+    padding: 20px;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+    /* モバイルでは単一カラムにする */
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-body h4,
+  .section-body li {
+    text-align: center;
+  }
+
+  .section-body h4 {
+    font-size: 18px;
+    margin-bottom: .4em;
+  }
+
+  .section-body .justify-start {
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    column-gap: 10%;
+  }
+}
+
+.profile-heading-with-border {
+  border-bottom: 1px solid #fff;
+  /* White border for dark background */
+  padding-bottom: 1.7em;
+  /* Some spacing below the border */
+  margin-bottom: 1.7em;
+  /* Space between this heading and the first paragraph */
+}
+
+/* Base .menu-btn styles */
+.menu-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-blend-mode: exclusion;
+  mix-blend-mode: exclusion;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu-btn__circles {
+  position: relative;
+  height: 13px;
+  width: 13px;
+  margin-right: 0.95vw;
+  /* 円が重なるためのコンテナ */
+}
+
+.menu-btn__circle {
+  display: block;
+  position: absolute;
+  top: 0;
+  /* -2px から 0 に変更 */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  /* transition を削除 - GSAPが制御するため */
+}
+
+/* 初期状態はJSで制御するため、CSSでは設定しない */
+.menu-btn__circle--top {
+  visibility: hidden;
+  /* Corrected typo 'visiblity', initial state */
+  opacity: 0;
+  /* Initial state */
+}
+
+/* No specific CSS for .menu-btn__circle--bottom's initial state if JS handles it */
+
+.menu-btn__text {
+  color: #fff;
+  mix-blend-mode: exclusion;
+  font-size: 18px;
+  /* Default to 16px for mobile-first */
+  background-blend-mode: normal;
+}
+
+@media (max-width: 768px) {
+  .menu-btn__text {
+    font-size: 16px;
+  }
+}
+
+
+.home-button {
+  z-index: 9999;
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  min-width: 40px;
+  min-height: 40px;
+  display: block;
+  border-radius: 50%;
+  background-color: #FF4F4F;
+  top: 10px;
+  /* Adjust as needed for padding/margin from top-left */
+  left: 10px;
+  /* Adjust as needed for padding/margin from top-left */
+  cursor: pointer;
+  /* Indicate it's clickable */
+}
+
+.home-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: #FF4F4F;
+  transition: transform .6s ease 0s, opacity .6s ease 0s, -webkit-transform .6s ease 0s;
+  /* Added transition */
+}
+
+.home-button:hover::before {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+.home-button-wrapper {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  z-index: 10;
+}
+
+.section-padding-top {
+  padding-top: 80px;
+  /* Mobile first */
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  /* Tablet */
+  .section-padding-top {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* PC */
+  .section-padding-top {
+    padding-top: 220px;
+  }
+}
