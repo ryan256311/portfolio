@@ -16,7 +16,7 @@ const WorkDetail: React.FC<{ id: number }> = ({ id }) => {
 
   return (
     <AnimatedSection>
-      <section id="work-detail" className="min-h-screen py-16">
+      <section id="work-detail" className="min-h-screen section-padding-top section-padding-bottom">
         <div className="container mx-auto p-4">
           <a href="#works" className="text-accent hover:underline mb-8 block">&larr; Back to Works</a>
           <h2 className="text-4xl font-bold text-center mb-12">{work.title}</h2>
