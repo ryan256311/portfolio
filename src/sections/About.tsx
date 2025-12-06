@@ -12,7 +12,7 @@ const About: React.FC = () => {
 
           {/* Section 1: PROFILE */}
           <div className="info-row">
-            <h2 className="section-title">I am ...</h2> {/* New section title for profile */}
+            <h2 className="section-title">PROFILE</h2> {/* New section title for profile */}
             <div className="section-body">
               {/* The existing content including the name and paragraphs */}
               <h3 className="profile-heading-with-border">
@@ -20,10 +20,10 @@ const About: React.FC = () => {
                 <span className="text-sm">フロントエンドエンジニア</span>
               </h3> {/* Changed from h3 to p with font-bold */}
               <p className="mb-4">
-                WebチE��レクター、フロントエンドエンジニア、そしてチE��イナ�Eとしての多角的な経験を持ってぁE��す。企画営業の経験も活かし、技術とビジネスの両面からWebサービス制作を推進してぁE��す。常に顧客の事業課題解決を目皁E��した改喁E��案に注力し、E��新皁E��アプローチで期征E��趁E��る価値提供を追求しております、E
+                Webディレクター、フロントエンドエンジニア、そしてデザイナーとしての多角的な経験を持つ新家 涼平です。企画営業の経験も活かし、技術とビジネスの両面からWebサービス制作を推進しています。常に顧客の事業課題解決を目的とした改善提案に注力し、革新的なアプローチで期待を超える価値提供を追求しております。
               </p>
               <p>
-                私�E制作哲学は「お客様�E目標達成を本質とするチE��インと、品質の高いコード�E融合」です。コーチE��ング、デザイン、ウェブサイト制作、LP、庁E��バナーとぁE��たデジタルアセチE��は、お客様�E売上向上や特定�E目標達成を実現するための強力なチE�Eルであると認識しております。そのため、単に技術やチE��インの質を追求するだけでなく、常にお客様�Eご要望を深く理解し、その実現にコミットすることで、期征E��趁E��る価値提供を追求しております。要件定義から運用コンサルチE��ングまで一貫して携わり、ユーザーとビジネス双方にとって真に価値のあるチE��タル体験を創造します、E
+                私の制作哲学は「ユーザー中心のデザインと、品質の高いコードの融合」です。要件定義からデザイン、フロントエンド実装、品質管理、そして運用コンサルティングまで一貫して携わることで、ユーザーとビジネス双方にとって価値のあるデジタル体験を創造します。また、どんな困難なプロジェクトにおいても、常に前向きでユーモアを忘れず、チーム全体が楽しみながら最高の成果を出せる環境づくりを心がけております。現在は新規プロジェクトのリーダーとして、戦略立案と実行管理も主導しております。
               </p>
             </div>
           </div>
@@ -32,6 +32,7 @@ const About: React.FC = () => {
           <div className="info-row">
             <h2 className="section-title">SKILLS</h2>
             <div className="section-body">
+              {/* This content comes from the previous Skills section */}
               <div className="flex justify-start skills-grid flex-wrap text-center">
                 {skillCategories.map((category, index) => (
                   <div key={index}>
@@ -54,6 +55,7 @@ const About: React.FC = () => {
           <div className="info-row">
             <h2 className="section-title">CAREER</h2>
             <div className="section-body">
+              {/* This content comes from the previous Career section */}
               <div className="">
                 {careerHistory.map((item, index) => (
                   <div key={index} className="mb-12">
