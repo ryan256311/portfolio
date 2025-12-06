@@ -20,6 +20,11 @@ const WorkDetail: React.FC<{ id: number }> = ({ id }) => {
         <div className="container mx-auto p-4">
           <a href="#works" className="text-accent hover:underline mb-8 block">&larr; Back to Works</a>
           <h2 className="text-4xl font-bold text-center mb-12">{work.title}</h2>
+          {work.thumbnail && (
+            <div className="flex justify-center mb-12">
+              <img src={work.thumbnail} alt={work.title} className="max-w-full h-auto rounded-lg shadow-lg" />
+            </div>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <dl>
