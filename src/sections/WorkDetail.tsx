@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AnimatedSection from '../components/AnimatedSection';
 import { works } from '../data/works'; // Import works data
 
 const WorkDetail: React.FC<{ id: number }> = ({ id }) => {
   const work = works.find((w) => w.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  }, []);
 
   if (!work) {
     return (

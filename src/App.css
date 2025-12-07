@@ -336,12 +336,12 @@
 
   /* PC */
   .section-padding-top {
-    padding-top: 180px;
+    padding-top: 140px;
   }
 }
 
 .section-padding-bottom {
-  padding-bottom: 40px; /* Mobile first */
+  padding-bottom: 80px; /* Mobile first */
 }
 
 @media (min-width: 769px) and (max-width: 1023px) { /* Tablet */
